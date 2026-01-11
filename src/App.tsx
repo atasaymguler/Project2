@@ -1,11 +1,12 @@
-import './App.css'
+
+import Asidebar from './components/Asidebar'
 
 function App() {
 
   return (
-    <div >
-     
-    </div>
+    < >
+     <Asidebar />
+    </>
   )
 }
 
