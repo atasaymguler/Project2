@@ -8,12 +8,16 @@ const initialState: AppState = {
   asidebar: false,
 };
 
-export const counterSlice = createSlice({
+export const appSlice = createSlice({
   name: "app",
   initialState,
-  reducers: {},
+  reducers: {
+    moveAsidebar: (state: AppState) => {
+      state.asidebar = !state.asidebar;
+    },
+  },
 });
 
-export const {} = counterSlice.actions;
+export const { moveAsidebar } = appSlice.actions;
 
-export default counterSlice.reducer;
+export default appSlice.reducer;
